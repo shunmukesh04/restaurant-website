@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shannu's Restaurant - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Shannu's Restaurant</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Savor the Moment</h1>
+            <p>Join us for an unforgettable dining experience.</p>
+            <button onclick="scrollToSection('reservations')">Make a Reservation</button>
+            <button onclick="scrollToSection('menu')">View Menu</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <table>
+            <tr>
+                <th>Dish</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Grilled Salmon</td>
+                <td>$28</td>
+                <td>Pan-seared with a citrus glaze, served with asparagus and wild rice.</td>
+            </tr>
+            <tr>
+                <td>Truffle Pasta</td>
+                <td>$22</td>
+                <td>Handmade fettuccine in a creamy truffle sauce.</td>
+            </tr>
+            <tr>
+                <td>Chicken Biryani</td>
+                <td>$10</td>
+                <td>A flavorful mix of rice, chicken, and spices.</td>
+            </tr>
+            <tr>
+                <td>Noodles</td>
+                <td>$22</td>
+                <td>A classic Chinese noodle dish.</td>
+            </tr>
+            <tr>
+                <td>Fish Tacos</td>
+                <td>$15</td>
+                <td>Soft tortillas filled with grilled fish and fresh salsa.</td>
+            </tr>
+            <tr>
+                <td>Fish and Chips</td>
+                <td>$18</td>
+                <td>Crispy battered fish served with fries and tartar sauce.</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations">
+        <h2>Book Your Table</h2>
+        <form id="reservation-form">
+            <input type="text" placeholder="Name" required>
+            <input type="date" required>
+            <input type="time" required>
+            <input type="number" placeholder="Party Size" min="1" required>
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Wine Tasting Night</h3>
+            <p>March 10th, 7 PM - Explore curated reds with small bites.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Shannu's Restaurant | 123 Flavor Street, Foodie Town | tirupati</p>
+        <p>Email: info@shannurestaurant.com</p>
+        <img src="instagram-logo.png" alt="Instagram Logo" style="width: 30px; height: 30px;">
+        <img src="contact-logo.png" alt="Contact Logo" style="width: 30px; height: 30px;">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
